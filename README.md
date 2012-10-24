@@ -53,7 +53,6 @@ var fileSource = require('ejs-crunch')({
 
 // Then do something like write to a file, so gruntjs can use it
 fs.writeFileSync('./static/test.js', fileContents);
-
 ```
 
 # TODO
