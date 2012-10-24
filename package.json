@@ -6,7 +6,7 @@
     "name": "Daniel Schwartz",
     "email": "dschwartz88@gmail.com"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/danielschwartz/ejs-crunch.git"
@@ -14,7 +14,7 @@
   "bugs": {
     "url": "http://github.com/danielschwartz/ejs-crunch/issues"
   },
-  "_id": "ejs-crunch@0.0.1",
+  "_id": "ejs-crunch@0.0.2",
   "_from": "ejs-crunch",
   "dependencies": {
     "wrench": "~1.3.9",
