@@ -18,6 +18,12 @@ There are two ways to use this module. It will integrate directly as a connect-a
 							 * or an array of strings representing paths (is not recursive)
 							 */
 
+	fileType:				/* 
+							 * STRING 
+							 * Default is 'ejs', however if they have a different extension provide it here
+							 * (Only applicable when providing a directory for recursion)
+							 */
+
 	connectPremanipulate:   /* 
 							 * BOOLEAN
 	        				 * Whether the return type should 

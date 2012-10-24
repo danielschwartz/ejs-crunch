@@ -18,7 +18,7 @@ var FILE_TYPE = 'ejs';
 
 
 module.exports = function(options){
-	var fileSource = buildFile(options.files);
+	var fileSource = buildFile(options.files, options.fileType);
 
 	if(options.connectPremanipulate){
 		return function(file, path, index, isLast, callback){
@@ -31,11 +31,12 @@ module.exports = function(options){
 
 // /* Private Functions */
 
-function buildFile(files){
-	var viewFiles;
+function buildFile(files, fileType){
+	var extension = fileType || FILE_TYPE,
+		viewFiles;
 	
 	if(typeof files === 'string'){
-		viewFiles = getAllFilesForType(files, FILE_TYPE);
+		viewFiles = getAllFilesForType(files, extension);
 	} else {
 		viewFiles = files;
 	}
